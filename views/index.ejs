@@ -1,32 +1,41 @@
 <% include ./includes/header %>
 
-	<main>
-	    <div class="jumbotron">
-	        <h2>Node js</h2>
-	        <h3>Tools used:</h3>
-	        <table>
-			  <tr>
-			    <th>Name</th>
-			    <th>Tool</th>
-			  </tr>
-			  <tr>
-			    <td>Language Used</td>
-			    <td>Node js</td>
-			  </tr>
-			  <tr>
-			    <td>Framework</td>
-			    <td>Express js</td>
-			  </tr>
-			  <tr>
-			    <td>Database</td>
-			    <td>MongoDb</td>
-			  </tr>
-			  <tr>
-			    <td>Authentication</td>
-			    <td>JWT</td>
-			  </tr>
-			</table>
-	    </div>
-	</main>
+<main>
+	<div class="jumbotron">
+		<h2>Node js</h2>
+		<h3>Tools used:</h3>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Tool</th>
+			</tr>
+			<tr>
+				<td>Language Used</td>
+				<td>Node js</td>
+			</tr>
+			<tr>
+				<td>Framework</td>
+				<td>Express js</td>
+			</tr>
+			<tr>
+				<td>Database</td>
+				<td>MongoDb</td>
+			</tr>
+			<tr>
+				<td>Authentication</td>
+				<td>JWT</td>
+			</tr>
+		</table>
+	</div>
+	<div>
+		<form id="uploadForm" enctype="multipart/form-data" action="/api/photo" method="post">
+			<input type="file" name="userPhoto" multiple />
+			<input type="submit" value="Upload Image" name="submit">
+			<input type='text' id='random' name='random'><br>
+			<span id="status"></span>
+		</form>
+	</div>
+
+</main>
 
 <% include ./includes/footer %>
